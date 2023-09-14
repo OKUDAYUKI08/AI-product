@@ -13,5 +13,9 @@ def new():
 def show():
     return render_template("show.html")
 
+@app.route("/show-input")
+def show():
+    return render_template("show.html",)
+
 if __name__=="__main__":
     app.run(debug=True)
